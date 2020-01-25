@@ -110,6 +110,7 @@ class App extends Component {
               <p>Data recieved for {this.state.data.location.name}</p>
 
               <WeatherDisplay
+                date={this.state.data.localtime}
                 image={this.state.data.current.weather_icons}
                 location={this.state.data.location.name}
                 weather_descriptions={
